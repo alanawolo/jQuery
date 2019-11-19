@@ -1,4 +1,4 @@
-subscribe.onchange = function() {
+$("#subscribe").change(function() {
 	if ($(this).is(':checked')){
 		console.log("selected");
     	$("#emailField").css("display", "block");
@@ -6,4 +6,4 @@ subscribe.onchange = function() {
         console.log("Not selected");
         $("#emailField").css("display", "none");
       }
-    }
+    })
