@@ -1,10 +1,11 @@
-ch3form.onsubmit = function() {
-    var fruit = $('input[name="fruit"]')
-    var age = $('input[name="standing"]');
-    if (fruit.is(':checked')){
-            return true;
-    }
-    alert("You must pick a fruit!")
-    return false;
-
-  }
+$(document).ready(function(){
+          $("form").submit(function(onsubmit){
+            var fruit = $('input[name="fruit"]');
+            var year = $('input[name="standing"]');
+            if((fruit.is(":checked")) && (year.is(":checked"))){
+              return true;
+            }
+            alert("Pick a fruit and a year!");
+            return false;
+          })
+        })

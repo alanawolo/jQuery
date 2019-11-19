@@ -1,4 +1,4 @@
-ch4form.onsubmit = function() {
+$("form").submit(function(onsubmit){
     var validInput = true;
     var name = $("#fullname");
     var address = $("#streetaddr");
@@ -25,4 +25,4 @@ ch4form.onsubmit = function() {
     }
 
     return validInput;
-}
+});
